@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_compile_options(-Wall -pedantic)
 
+add_executable(cpp_labs_1)
 add_subdirectory(lab1)

@@ -22,6 +22,7 @@ uint64_t HashCalc::sum64(std::ifstream &file) {
 
     while (!file.eof()) {
         file.read((char*)&tmp, sizeof(uint64_t));
+        tmp = htonll(tmp); // Ensure big-endian
         sum += tmp;
     }
     return sum;

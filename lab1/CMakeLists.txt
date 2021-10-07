@@ -1,10 +1,8 @@
-if (APPLE)
-    include_directories(/usr/local/include)
-    link_directories(/usr/local/lib)
-    link_libraries(boost_program_options)
-endif()
+project(cpp_labs)
 
-add_executable(cpp_labs_1
+add_compile_options(-Wall -pedantic)
+
+target_sources(cpp_labs_1 PRIVATE
         main.cpp
         HashCalc.h
         HashCalc.cpp)
