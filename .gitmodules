@@ -1,0 +1,6 @@
+[submodule "lab2/SafeInt"]
+	path = lab2/SafeInt
+	url = https://github.com/dcleblanc/SafeInt
+[submodule "lib/googletest"]
+	path = lib/googletest
+	url = https://github.com/google/googletest
